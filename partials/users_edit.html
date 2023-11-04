@@ -1,0 +1,35 @@
+<div class="modal_head">
+    <i class="icon_close" onclick="common.modal_hide()"></i>
+</div>
+
+<div class="modal_body">
+    <div class="input_group_modal">
+        <div>First name</div>
+        <input type="text" id="first_name" value="{$users.first_name}">
+    </div>
+    <div class="input_group_modal">
+        <div>Last name</div>
+        <input type="text" id="last_name" value="{$users.last_name}">
+    </div>
+    <div class="input_group_modal">
+        <div>Phone</div>
+        <input type="text" id="phone" value="{$users.phone}">
+    </div>
+    <div class="input_group_modal">
+        <div>Email</div>
+        <input type="text" id="email" value="{$users.email}">
+    </div>
+    <div class="input_group_modal">
+        <div>Plots</div>
+        <input type="text" id="plots" value="{$users.id}">
+    </div>
+   
+    <div class="modal_controls">
+        <div>
+            <div class="btn_modal" onclick="common.users_edit_update({$users.user_id});">Save</div>
+        </div>
+        <div>
+            <div class="btn_modal light" onclick="common.modal_hide();">Cancel</div>
+        </div>
+    </div>
+</div>
